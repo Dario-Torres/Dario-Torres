@@ -16,7 +16,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
+    <!-- Modeal for work content-->
+    <div class="modal" id="WorkModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <span id="ModalHeader"></span>
+            <ul class="content-list" id="Content-List">
+                <!-- empty unordered list to hold conternt injected through script-->
+            </ul>
+        </div>
+    </div>
+
+    <body class="modal-open">
+        <!-- Various scripts and includeds needed for page to work properly -->
+        <script src="./script/index.js"></script>
+        <script src="./documents/work_exp.json" type="json"></script>
+
         <!-- landing page with background, name, title, and pronouns
                the image should also have a paralax effect -->
         <div class="landing">
@@ -40,7 +55,7 @@
                     
                 </div>
             </div>
-        </div>22>
+        </div>-->
 
         <!-- Main article body -->
         <div id="About" class="article">
@@ -110,25 +125,26 @@
                 </table>
             </div>
 
+            <!--#include virtual="/footer.html" -->
             <div class="work-history work-item">
                 <h1>Work</h1>
-                <table>
-                    <tr class="item">
+                <table>             
+                    <tr class="item" onclick="openModal('gallo')">
                         <td><h3>2022-2024</h3></td>
                         <td><h3>E. & J. Gallo Winery</h3></td>
                         <td><h3>Business Systems Analyst<h3</td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" onclick="openModal('kelly')">
                         <td><h3>2020-2022</h3></td>
                         <td><h3>Kelly Services Temp @ E. & J. Gallo Winery</h3></td>
                         <td><h3>Platform Developer</h3></td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" onclick="openModal('sylvan')">
                         <td><h3>2019-2020</h3></td>
                         <td><h3>Sylvan Learning</h3></td>
                         <td><h3>Tutor</h3></td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" onclick="openModal('moon')">
                         <td><h3>2019-2020</h3></td>
                         <td><h3>Moon Elementary School</h3></td>
                         <td><h3>Teacher's Aid</h3></td>
@@ -139,8 +155,9 @@
             <div class="work-skills work-item">
                 <h1>Skills</h1>
                 <table>
+                    <!-- Programming skills -->
                     <tr class="item">
-                        <td><h3>Programming</h3></td>
+                        <th><h3>Programming</h3></th>
                     </tr>
                     <tr class="item skill-item">
                         <td>Java</td>
@@ -162,8 +179,53 @@
                         <td>Javascript</td>
                         <td>Proficient</td>
                     </tr>
+                    <!-- Programming tools and skills -->
                     <tr class="item">
-                        <th>Languages</th>
+                        <th><h3>Tools</h3></th>
+                    </tr>
+                    <tr class="item">
+                        <td>Git</td>
+                        <td>Proficient</td>
+                    </tr>
+                    <tr class="item">
+                        <td>ServiceNow</td>
+                        <td>Proficient</td>
+                    </tr>
+                    <tr class="item">
+                        <td>Angular</td>
+                        <td>Proficient</td>
+                    </tr>
+                    <tr class="item">
+                        <td>Vue</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr class="item">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="item">
+                        <td>SOAP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="item">
+                        <td>REST</td>
+                        <td></td>
+                    </tr>
+                    <!-- familiar platforms-->
+                    <tr class="item">
+                        <th><h3>Platforms</h3></th>
+                    </tr>
+                    <tr class="item">
+                        <td>Windows</td>
+                        <td>Ubuntu</td>
+                    </tr>
+                    <tr class="item">
+                        <td>Mac OS</td>
+                        <td>Linux</td>
+                    </tr>
+                    <!-- Spoken/written languages -->
+                    <tr class="item">
+                        <th><h3>Languages</h3></th>
                     </tr>
                     <tr class="item">
                         <td>English</td>
@@ -172,6 +234,18 @@
                     <tr class="item">
                         <td>Spanish</td>
                         <td>Fluent</td>
+                    </tr>
+                    <!-- MISC non-quantifiable skills -->
+                    <tr class="item">
+                        <th><h3>Soft Skills</h3></th>
+                    </tr>
+                    <tr class="item">
+                        <td>Object-oriented Programming</td>
+                        <td>AJAX</td>
+                    </tr>
+                    <tr class="item">
+                        <td>SCRUM</td>
+                        <td>Agile</td>
                     </tr>
                 </table>
             </div>

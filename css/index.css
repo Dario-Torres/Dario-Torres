@@ -2,15 +2,43 @@
 html,body{
     height:100%;
     /*background-color: black;*/
+    scrollbar-width: thin;
 }
 
 h1,h2,h3,p,td,li{
     font-family: 'Courier New', Courier, monospace;
-    color: lime;
 }
 
 .container{
     display: flex;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .article{
@@ -19,6 +47,7 @@ h1,h2,h3,p,td,li{
     /* background-color: rgb(0 0 0); */
     backdrop-filter: blur(15px);
 }
+
 
 /* Landnig background amd intro information */
 .landing{
@@ -106,18 +135,16 @@ h1,h2,h3,p,td,li{
 }
 
 #Work{
-    border: solid purple 4px;
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: green;
 
     .work-item{
         margin-top: 4%;
-        border: solid red 4px;
         padding: 2% 3% 0 3%;
         
         table{
-            border-top: solid whitesmoke 4px;
+            border-top: solid black 4px;
             width: 100%;
     
             td{
@@ -126,7 +153,6 @@ h1,h2,h3,p,td,li{
         } 
 
         .education-item{
-            border: solid blue 4px;
             margin-left: 5%;
             margin-right: 5%; 
             padding: 0 1% 0 1%;
@@ -134,18 +160,23 @@ h1,h2,h3,p,td,li{
           }
     }
 
-    .work-education{
+    /*.work-education{
 
-    }
+    }*/
     
     .work-history{
-
+        .item:hover{
+            background-color: #AAA;
+            cursor: pointer;
+            td{
+                border: none
+            }
+        }
     }
 
     .work-skills{
         .item{
-            background-color: aqua;
-            /* border-bottom: dashed 4px white; */
+            border-bottom: dashed 4px black;
         }
     }
 }
