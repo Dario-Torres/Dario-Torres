@@ -1,0 +1,11 @@
+footer{
+    border-top: double black 3px;;
+}
+
+.footer-links{    
+    justify-content: center;
+
+    h4{
+        margin:2px;
+    }
+}

@@ -1,0 +1,25 @@
+.navbar{
+    height: 25px;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    border-bottom: double black 3px;
+}
+
+.navbar-home{
+}
+
+.navbar-links{
+    justify-content: right;
+}
+
+.navbar-button{
+    margin: 0px 5px 0px 5px;
+    padding: 3px;
+}
+
+.navbar-button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
