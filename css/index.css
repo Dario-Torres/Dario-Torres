@@ -9,3 +9,7 @@ html{
 .item{
     flex-grow: 1;
 }
+
+.article{
+    margin-top: 25px;
+}
