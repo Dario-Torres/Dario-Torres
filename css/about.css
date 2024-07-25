@@ -1,14 +1,19 @@
 #About{
-    border: solid red 2px;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .about-item{
-    width:50%;
-    height: 200px;
+    margin: auto;
+    padding: 0px 20px 0px 20px;
+}
+
+.description{
+    padding-right: 45px;
+    padding-left: 25px;
 }
 img{
     height: 300px;
-    width: 200px;
+    width: 200px;;
     object-fit:contain;
 }
