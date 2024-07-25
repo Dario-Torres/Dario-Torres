@@ -2,6 +2,10 @@ html{
     scrollbar-width: thin;
 }
 
+body{
+    margin: 0px 55px 0px 55px;
+}
+
 .container{
     display: flex;
 }
@@ -11,5 +15,7 @@ html{
 }
 
 .article{
-    margin-top: 25px;
+    margin-top: 35px;
+
+    padding: 25px;
 }

@@ -1,14 +1,16 @@
 .navbar{
-    height: 25px;
+    height: 35px;
     width:100%;
-    position:fixed;
+    position:sticky;
     top:0;
     left:0;
     z-index:1;
     border-bottom: double black 3px;
+    background-color: white;
 }
 
 .navbar-home{
+    height: 100%;
 }
 
 .navbar-links{
@@ -16,11 +18,13 @@
 }
 
 .navbar-button{
-    margin: 0px 5px 0px 5px;
-    padding: 3px;
+    padding: 3px 10px 0px 10px;
+    transition: .2s;
+    height: 91%;
 }
 
-.navbar-button:hover{
-    background-color: aqua;
+.navbar-button:hover, .active{
+    background-color: #AAA;
+    color: limegreen;
     cursor: pointer;
 }

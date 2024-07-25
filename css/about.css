@@ -1,0 +1,14 @@
+#About{
+    border: solid red 2px;
+    justify-content: space-evenly;
+}
+
+.about-item{
+    width:50%;
+    height: 200px;
+}
+img{
+    height: 300px;
+    width: 200px;
+    object-fit:contain;
+}
