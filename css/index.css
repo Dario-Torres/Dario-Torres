@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    margin: 0px 55px 0px 55px;
+    margin: 0px 175px 0px 175px;
 }
 
 .container{
@@ -18,4 +18,23 @@ body{
     margin-top: 35px;
 
     padding: 25px;
+}
+
+.center-align{
+    text-align: center;
+}
+
+/* Common text and page styling */
+.article-title{
+    color:blueviolet;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.clickable{
+    transition:.2s;
+}
+.clickable:hover{
+    background-color: lightgray;
+    cursor: pointer;
 }

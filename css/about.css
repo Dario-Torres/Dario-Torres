@@ -1,6 +1,7 @@
 #About{
     justify-content: space-evenly;
     padding: 10px;
+    /*height: 100vh;*/
 }
 
 .about-item{
@@ -13,7 +14,18 @@
     padding-left: 25px;
 }
 img{
-    height: 300px;
-    width: 200px;;
+    height: 350px;
+    width: 250px;;
     object-fit:contain;
+}
+
+.table-listing{
+    margin-left: 5px;
+}
+
+.school{
+    justify-content: center;
+    padding-right: 20px;
+    top: 50%;
+
 }
