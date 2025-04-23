@@ -7,6 +7,10 @@
 
         <!-- stylesheets -->
         <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/education.css"
 
         <!-- Meta information -->
         <meta charset="UTF-8">
@@ -16,269 +20,249 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <!-- Modeal for work content-->
-    <div class="modal" id="WorkModal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <span id="ModalHeader"></span>
-            <ul class="content-list" id="Content-List">
-                <!-- empty unordered list to hold conternt injected through script-->
-            </ul>
-        </div>
-    </div>
 
-    <body class="modal-open">
+    <body>
         <!-- Various scripts and includeds needed for page to work properly -->
         <script src="./script/index.js"></script>
         <script src="./documents/work_exp.json" type="json"></script>
 
-        <!-- landing page with background, name, title, and pronouns
-               the image should also have a paralax effect -->
-        <div class="landing">
-            <div class="landing-text">
-                <h1>Daria Torres_</h1>
-                <h2>Business Systems Analst/Programmer</h2>
-                <h3>He/She/They</h3>
+
+        <!-- NavBar -->
+        <div class="navbar container">
+            <div class="navbar-home">
+                <div class="navbar-button" onclick="navigate('home')">Daria Torres</div>
+            </div>
+            <div class="container navbar-links item">
+                <div class="navbar-button" onclick="navigate('STUB')">Education</div>
+                <div class="navbar-button" onclick="navigate('STUB')">Experience</div>
+                <div class="navbar-button" onclick="navigate('STUB')">Projects</div>
+                <div class="navbar-button" onclick="navigate('STUB')">Contact</div>
             </div>
         </div>
 
-        <!-- NavBar -->
-        <!--<div class="navbar-container container">
-            <div class="navbar-content justify-left">
-                <h2 class="page-name">
-                    Jose Daria Torres
-                </h2>
-            </div>
-
-            <div class="navbar-content justify-right contianer">
-                <div>
-                    
-                </div>
-            </div>
-        </div>-->
-
         <!-- Main article body -->
-        <div id="About" class="article">
-            <div class="container article-plate">
-                <div class="article-photo">
-                    <img class="image" src="./images/me-fullbody.jpg">
-                </div>
-                <div class="article-content">
-                    <div class="about-section">
-                        <h1>About me</h1>
-                        <h2>
-                            My name is Daria. I am programmed and web developer by trade and an aspiring researcher in brain-machine interaction. 
-                            I love animals, nature, and technology insofar as technology can help humanity live more fulfilling lives. I am also 
-                            passionate about queer rights, latinx representation, and social justice.
-                        </h2>
-                    </div>
-
-                    <div class="about-section">
-                        <h1>Educational Journey</h1>
-                        <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </h2>
-                    </div>
-
-                    <div class="about-section">
-                        <h1>Personal Journey</h1>
-                        <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </h2>
-                    </div>
-
-                    <div class="about-section">
-                        <h1>Professional Journey</h1>
-                        <h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </h2>
-                    </div>
-
-                </div>
+        <div id="About"  class="container">
+            <div class="about-item">
+                <img class="" src="./images/me-fullbody.jpg" alt="profile_picture.jpg">
+            </div>
+            <div class="about-item description">
+                <h3>About me</h3>
+                <p>My name is Daria. I am programmed and web developer by trade and an aspiring researcher in brain-machine interaction. 
+                    I love animals, nature, and technology insofar as technology can help humanity live more fulfilling lives. 
+                    I am also passionate about queer rights, latinx representation, and social justice. 
+                </p>
             </div>
         </div>
 
         <!-- Div contianing all work related items like experience. education, skills, and certs-->
-        <div id="Work" class="article">
-            <div class="work-education work-item">
-                <h1>Education</h1>
+        <div id="Education" class="article">
+            <div class="article-title-area">
+                <span class="article-title">Education</span>
+            </div>
+           <div class="article-item">
+                <span>University of California - Santa Cruz</span>
+                <div class="clickable">
+                    <span>Bachelor of Science - Computer Science</span>
+                    <span>2014 - 2019</span>
+                </div>
+                <div class="clickable">
+                    <span>Bachelor of Science - Cognitive Science concentration in AI/HCI</span>
+                    <span>2014 - 2019</span>
+                </div>
+           </div>
+           <div class="article-item">
+                <span>Continuous Learning</span>
+                <div class="clickable">
+                    <span>Certified ServiceNow Administrator</span>
+                    <span>2022-2024</span>
+                </div>
+                <div class="clickable">
+                    <span>AWS Cloud Practitioner</span>
+                    <span>2021-2023</span>
+                </div>
+           </div>
+        </div>
+
+        <!-- Section containing all experience including work related, general skill, certifications, and expertise -->
+        <div id="Exp" class="article">
+            <h3>Work Experience</h3>
+             <table>
+                <tr class="clickable">
+                    <td>
+                        <h4>2022 - 2024</h4>
+                        <h6>Business Systems Analyst</h6>
+                    </td>
+                    <td>
+                        &bull;
+                    </td>
+                    <td>
+                        <h4>E. & J. Gallo Winery</h4>
+                        <h6>Led initiatives to automate and streamline processes, including integrating systems like ServiceNow and GitLab, 
+                            improving efficiency and reducing support requests. I also served as a SCRUM master, driving agile practices, 
+                            and developed web-based tools to standardize project management workflows across the engineering department.  
+                        </h6>
+                    </td>
+                </tr>
+                <tr class="clickable">
+                    <td>
+                        <h4>2020 - 2022</h4>
+                        <h6>Platform Developer Temp </h6>
+                    </td>
+                    <td>
+                        &bull;
+                    </td>
+                    <td>
+                        <h4>Kelly Services</h4>
+                        <h6>Led projects to enhance system integrations and streamline processes, including developing a web-based portal 
+                             for SAP ticket creation and improving alert response times via ServiceNow and iMonnit integration. I also 
+                             collaborated with HR to create a custom portal, maintained SQL queries for data management, and managed code 
+                             reviews, quality assurance, and stakeholder communications.
+                        </h6>
+                    </td>
+                </tr>
+                <tr class="clickable">
+                    <td>
+                        <h4>2019 - 2020</h4>
+                        <h6>Tutor & Instructional Aide</h6>
+                    </td>
+                    <td>
+                        &bull;
+                    </td>
+                    <td>
+                        <h4>Sylvan Learning</h4>
+                        <h6>Supported teachers by preparing instructional materials, enforcing classroom rules, and leading reading groups 
+                            for 1st and 2nd grade students. Additionally, I served as a substitute teacher, assisted with kindergarten 
+                            enrollment, and handled various administrative tasks.
+                        </h6>
+                    </td>
+                </tr>
+             </table>
+
+             <h3>Skills</h3>
+             <div id="Skills">
                 <table>
-                    <tr class="item">
-                        <td><h3>2014-2019</h3></td>
-                        <td><h3>B.S. Computer Science</h3></td>
-                        <td><h3>University of California, Santa Cruz</h3></td>
+                    <tr>
+                        <td>Amazon Web Services - Advanced</td>
+                        <td>Continuous Integration & Continuous Delivery - Advanced</td>
                     </tr>
-                    <tr class="item">
-                        <td><h3>2014-2019</h3></td>
-                        <td><h3>B.S. Cognitive Science Emph. HCI & AI</h3></td>
-                        <td><h3>University of California, Santa Cruz</h3></td>
+                    <tr>
+                        <td>ServiceNow - Advanced</td>
+                        <td>Linux - Advanced</td>
                     </tr>
-                </table>
-            </div>
-
-            <!--#include virtual="/footer.html" -->
-            <div class="work-history work-item">
-                <h1>Work</h1>
-                <table>             
-                    <tr class="item" onclick="openModal('gallo')">
-                        <td><h3>2022-2024</h3></td>
-                        <td><h3>E. & J. Gallo Winery</h3></td>
-                        <td><h3>Business Systems Analyst<h3</td>
-                    </tr>
-                    <tr class="item" onclick="openModal('kelly')">
-                        <td><h3>2020-2022</h3></td>
-                        <td><h3>Kelly Services Temp @ E. & J. Gallo Winery</h3></td>
-                        <td><h3>Platform Developer</h3></td>
-                    </tr>
-                    <tr class="item" onclick="openModal('sylvan')">
-                        <td><h3>2019-2020</h3></td>
-                        <td><h3>Sylvan Learning</h3></td>
-                        <td><h3>Tutor</h3></td>
-                    </tr>
-                    <tr class="item" onclick="openModal('moon')">
-                        <td><h3>2019-2020</h3></td>
-                        <td><h3>Moon Elementary School</h3></td>
-                        <td><h3>Teacher's Aid</h3></td>
+                    <tr>
+                        <td>Project Managment - Advanced</td>
+                        <td>Web Development  - Advanced</td>
                     </tr>
                 </table>
-            </div>
+             </div>
 
-            <div class="work-skills work-item">
-                <h1>Skills</h1>
-                <table>
-                    <!-- Programming skills -->
-                    <tr class="item">
-                        <th><h3>Programming</h3></th>
-                    </tr>
-                    <tr class="item skill-item">
-                        <td>Java</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>Python</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>HTML</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>CSS</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>Javascript</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <!-- Programming tools and skills -->
-                    <tr class="item">
-                        <th><h3>Tools</h3></th>
-                    </tr>
-                    <tr class="item">
-                        <td>Git</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>ServiceNow</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>Angular</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr class="item">
-                        <td>Vue</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr class="item">
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="item">
-                        <td>SOAP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="item">
-                        <td>REST</td>
-                        <td></td>
-                    </tr>
-                    <!-- familiar platforms-->
-                    <tr class="item">
-                        <th><h3>Platforms</h3></th>
-                    </tr>
-                    <tr class="item">
-                        <td>Windows</td>
-                        <td>Ubuntu</td>
-                    </tr>
-                    <tr class="item">
-                        <td>Mac OS</td>
-                        <td>Linux</td>
-                    </tr>
-                    <!-- Spoken/written languages -->
-                    <tr class="item">
-                        <th><h3>Languages</h3></th>
-                    </tr>
-                    <tr class="item">
-                        <td>English</td>
-                        <td>Fluent</td>
-                    </tr>
-                    <tr class="item">
-                        <td>Spanish</td>
-                        <td>Fluent</td>
-                    </tr>
-                    <!-- MISC non-quantifiable skills -->
-                    <tr class="item">
-                        <th><h3>Soft Skills</h3></th>
-                    </tr>
-                    <tr class="item">
-                        <td>Object-oriented Programming</td>
-                        <td>AJAX</td>
-                    </tr>
-                    <tr class="item">
-                        <td>SCRUM</td>
-                        <td>Agile</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="work-certs work-item">
-                <h1>Certifications</h1>
+             <!-- List of all skills including platforms, web services, languages, etc. -->
+             <div>
                 <ul>
-                    <li>ServiceNow</li>
-                    <li>AWS Cloud Practitioner</li>
-                    <li>Java SE 8 Developer I</li>
+                    <li>
+                        <span>Java</span>
+                    </li>
+                    <li>
+                        <span>Python</span>
+                    </li>
+                    <li>
+                        <span>C</span>
+                    </li>
+                    <li>
+                        <span>C++</span>
+                    </li>
+                    <li>
+                        <span>REST/SOAP</span>
+                    </li>
+                    <li>
+                        <span>ServiceNow</span>
+                    </li>
+                    <li>
+                        <span>.NET</span>
+                    </li>
+                    <li>
+                        <span>AWS</span>
+                    </li>
+                    <li>
+                        <span>HTML</span>
+                    </li>
+                    <li>
+                        <span>CSS</span>
+                    </li>
+                    <li>
+                        <span>JavaScript</span>
+                    </li>
+                    <li>
+                        <span>TypeScript</span>
+                    </li>
+                    <li>
+                        <span>Angular JS</span>
+                    </li>
+                    <li>
+                        <span>Object Oriented Programming</span>
+                    </li>
+                    <li>
+                        <span>Agile</span>
+                    </li>
+                    <li>
+                        <span>Scrum</span>
+                    </li>
+                    <li>
+                        <span>Git</span>
+                    </li>
+                    <li>
+                        <span>Windows</span>
+                    </li>
+                    <li>
+                        <span>UNIX</span>
+                    </li>
+                    <li>
+                        <span>AJAX</span>
+                    </li>
+                </ul>
+             </div>
+        </div>
+
+        <!-- Section containing personal projects worked on. includes description and technologies/techniques used -->
+        <div id="Projects" class="article container">
+            <div class="project-item">
+                <p>Larch Web Browser</p>
+                <ul>
+                    <li>Java</li>
+                    <li>FX Swing</li>
+                    <li>Fast API</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <p>Full stack web store for small business</p>
+                <ul>
+                    <li>Angular</li>
+                    <li>MySQL</li>
+                    <li>REST Web Services</li>
+                    <li>bootstrap</li>
+                    <li>Aws</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <p>Plant Trade</p>
+                <ul>
+                    <li>PhP</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <p>DnD Companion</p>
+                <ul>
+                    <li>TBD</li>
                 </ul>
             </div>
         </div>
 
-        <div id="Projects" class="article">
-            <div class="projects-title">
-                <h1>Projects</h1>
-            </div>
-
-            <div class="projects-list">
-                <div class="projects-prj">
-                    <div class="projects-thumbnail">
-
-                    </div>
-                    <div class="projects-description">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <!-- Section to facilitate contacting me. Includes section for message and sender -->
         <div id="Contact" class="article">
-            <h1>Contact Me</h1>
+                <h1>Contact Me</h1>
             <form id="Contact-info">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="ex. John Wick"><br>   
@@ -291,7 +275,19 @@
 
         <!-- Footer content -->
         <footer>
-
+            <div class="footer-links container">
+                <h4>
+                    <a href="https://github.com/Dario-Torres">GitHub</a>
+                </h4>
+                <h4>&#x2022;</h4>
+                <h4>
+                    <a href="https://www.linkedin.com/in/josedario-m-torres/">LinkedIn</a>
+                </h4>
+                <h4>&#x2022;</h4>
+                <h4>
+                    <a href="https://www.instagram.com/daria_nbdoll/">Instagram</a>
+                </h4>
+            </div>
         </footer>
     </body>
 </html>
