@@ -33,19 +33,19 @@
             <nav>
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Home</a>
+                        <a href="#About" class="nav_link">Home</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Education</a>
+                        <a href="#Education" class="nav_link">Education</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Experience</a>
+                        <a href="#Expereince" class="nav_link">Experience</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Projects</a>
+                        <a href="#Projects" class="nav_link">Projects</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Contact</a>
+                        <a href="#Contact" class="nav_link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -60,7 +60,7 @@
                     <img class="about_image" src="./images/me-fullbody.jpg" alt="profile_picture.jpg">
                 </div>
                 <div class="about_item about_desc">
-                    <h3>About me</h3>
+                    <h3 classs="title_card">About me</h3>
                     <p>My name is Daria. I am programmed and web developer by trade and an aspiring researcher in brain-machine interaction. 
                         I love animals, nature, and technology insofar as technology can help humanity live more fulfilling lives. 
                         I am also passionate about queer rights, latinx representation, and social justice. 
@@ -71,8 +71,8 @@
             <!-- Div contianing all work related items like experience. education, skills, and certs-->
             <section id="Education">
                 <div class="education_content">
-                    <div>
-                        <span class="title-lg">Education</span>
+                    <div class="title_wrapper">
+                        <span class="title-lg title_card">Education</span>
                     </div>
                     <div class="education_item">
                             <span class="title-med">University of California - Santa Cruz</span>
@@ -102,9 +102,9 @@
             <!-- Section containing all experience including work related, general skill, certifications, and expertise -->
             <section id="Expereince">
                 <div class="experience_work">
-                    <h3>Work Experience</h3>
+                    <h3 class="title_wrapper"><span class="title_card title-lg">Work Expereince</span></h3>
                     <table cellspacing="0" cellpadding="0">
-                        <tr class="work_item">
+                        <tr class="work_item med-margin-btm">
                             <td>
                                 <h4>2025 - Present</h4>
                                 <span class="title-med">Nursery Associate</span>
@@ -112,7 +112,7 @@
                             <td>
                                 <span style="margin:0px 10px 0px 10px">&bull;</span>
                             </td>
-                            <td>
+                            <td class="work_item_desc">
                                 <h4><span class="title-med">SummerWinds Nursery</span></h4>
                                 <span>Engaged with customers to answer questions, provide quality customer service and suggestions tailored to customers'
                                     needs. Provided customers with speedy and personalized services as cashier. Maintained nursery inventory
@@ -120,7 +120,7 @@
                                 </span>
                             </td>
                         </tr>
-                        <tr class="work_item">
+                        <tr class="work_item med-margin-btm">
                             <td>
                                 <h4>2022 - 2024</h4>
                                 <span class="title-med">Business Systems Analyst</span>
@@ -128,15 +128,15 @@
                             <td>
                                 <span style="margin:0px 10px 0px 10px">&bull;</span>
                             </td>
-                            <td>
+                            <td class="work_item_desc">
                                 <h4><span class="title-med">E. & J. Gallo Winery</span></h4>
-                                <span >Led initiatives to automate and streamline processes, including integrating systems like ServiceNow and GitLab, 
+                                <span>Led initiatives to automate and streamline processes, including integrating systems like ServiceNow and GitLab, 
                                     improving efficiency and reducing support requests. I also served as a SCRUM master, driving agile practices, 
                                     and developed web-based tools to standardize project management workflows across the engineering department.  
                                 </span>
                             </td>
                         </tr>
-                        <tr class="work_item">
+                        <tr class="work_item med-margin-btm">
                             <td>
                                 <h4>2020 - 2022</h4>
                                 <span class="title-med">Platform Developer Temp</span>
@@ -144,7 +144,7 @@
                             <td>
                                 <span style="margin:0px 10px 0px 10px">&bull;</span>
                             </td>
-                            <td>
+                            <td class="work_item_desc">
                                 <h4><span class="title-med">Kelly Services</span></h4>
                                 <span>Led projects to enhance system integrations and streamline processes, including developing a web-based portal 
                                     for SAP ticket creation and improving alert response times via ServiceNow and iMonnit integration. I also 
@@ -161,7 +161,7 @@
                             <td>
                                 <span style="margin:0px 10px 0px 10px">&bull;</span>
                             </td>
-                            <td>
+                            <td class="work_item_desc">
                                 <h4><span class="title-med">Sylvan Learning</span></h4>
                                 <span>Supported teachers by preparing instructional materials, enforcing classroom rules, and leading reading groups 
                                     for 1st and 2nd grade students. Additionally, I served as a substitute teacher, assisted with kindergarten 
@@ -173,86 +173,171 @@
                 </div>
 
                 <div class="experience_skills">
-                    <h3>Skills</h3>
-                    <div class="skills_content">
-                        <table cellpadding="5">
-                            <tr>
-                                <td>Amazon Web Services - Advanced</td>
-                                <td>Continuous Integration & Continuous Delivery - Advanced</td>
+                    <h3 class="title_wrapper"><span class="title_card title-lg">Skills</span></h3>
+                    <div class="skills_content skills_highlight_wrapper">
+                        <table class="skill_highlight title-med" cellpadding="5">
+                            <thead class="title-lg">Highlight</thead>
+                            <tr class="skill_highligh_skill">
+                                <td class="skill_highligh_skill">
+                                    Amazon Web Services 
+                                    <br>
+                                    <progress value="55" max="100">Intermediate</progress>
+                                </td>
+                                <td class="skill_highligh_skill">
+                                    Continuous Integration & Testing
+                                    <br>
+                                    <progress value="75" max="100">Intermediate</progress>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>ServiceNow - Advanced</td>
-                                <td>Linux - Advanced</td>
+                            <tr class="skill_highligh_skill">
+                                <td class="skill_highligh_skill">
+                                    ServiceNow
+                                    <br>
+                                    <progress value="90" max="100">Advanced</progress>
+                                </td>
+                                <td class="skill_highligh_skill">
+                                    Linux
+                                    <br>
+                                    <progress value="85" max="100">Advanced</progress>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>Project Managment - Advanced</td>
-                                <td>Web Development  - Advanced</td>
+                            <tr class="skill_highligh_skill">
+                                <td class="skill_highligh_skill">
+                                    Project Management
+                                    <br>
+                                    <progress value="100" max="100">Advanced</progress>
+                                </td>
+                                <td class="skill_highligh_skill">
+                                    Web Development
+                                    <br>
+                                    <progress value="95" max="100">Advanced</progress>
+                                </td>
                             </tr>
                         </table>
                     </div>
 
                     <!-- List of all skills including platforms, web services, languages, etc. -->
-                    <div class="skills_content">
+                    <div class="skills_content skills_all_wrapper">
                         <ul>
-                            <li>
-                                <span>Java</span>
+                            <li><span class="title-med">Languages:</span>
+                                <ul>
+                                    <li>
+                                        <span>Java</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>Python</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>C++</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>C</span>
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>Python</span>
+                            <li><span class="title-med">Web Development/Services:</span>
+                                <ul>
+                                    <li>
+                                        HTML
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        css
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        JavaScript
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Angular JS
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Vue.js
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Typescript
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        AJAX
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        REST/SOAP
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>C</span>
+                            <li><span class="title-med">Platform Development</span>
+                                <ul>
+                                    <li>
+                                        ServiceNow
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        AWS
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>C++</span>
+                            <li><span class="title-med">SDLC Familiarity</span>
+                                <ul>
+                                    <li>
+                                        Agile
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Scrum
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        RCA
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Project Management
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Object Oriented Programming
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <span>REST/SOAP</span>
-                            </li>
-                            <li>
-                                <span>ServiceNow</span>
-                            </li>
-                            <li>
-                                <span>.NET</span>
-                            </li>
-                            <li>
-                                <span>AWS</span>
-                            </li>
-                            <li>
-                                <span>HTML</span>
-                            </li>
-                            <li>
-                                <span>CSS</span>
-                            </li>
-                            <li>
-                                <span>JavaScript</span>
-                            </li>
-                            <li>
-                                <span>TypeScript</span>
-                            </li>
-                            <li>
-                                <span>Angular JS</span>
-                            </li>
-                            <li>
-                                <span>Object Oriented Programming</span>
-                            </li>
-                            <li>
-                                <span>Agile</span>
-                            </li>
-                            <li>
-                                <span>Scrum</span>
-                            </li>
-                            <li>
-                                <span>Git</span>
-                            </li>
-                            <li>
-                                <span>Windows</span>
-                            </li>
-                            <li>
-                                <span>UNIX</span>
-                            </li>
-                            <li>
-                                <span>AJAX</span>
+                            <li><span class="title-med">Operating System</span>
+                                <ul>
+                                    <li>
+                                        Windows
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Linux
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Mac OS
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -260,10 +345,30 @@
             </section>
 
             <!-- Section containing personal projects worked on. includes description and technologies/techniques used -->
-            <section id="Projects">
-                <span class="title-lg full-width">Projects</span>
-                <div class="project_item">
+            <section id="Projects" class="">
+                <div class="full-width pad-left lg-margin-btm"><span class="title-lg title_card">Projects</span></div>
+                <div class="project_item clickable" onclick="navigate()">
+                    <p>Personal Site</p>
+                    <h6 class="sm-margin-btm"><span>
+                        Personal website (this site) written in pure HTML, CSS, and javascript and hosted on AWS utilizing
+                        free tier EC2 instance, S3, and AWS Domain.
+                    </span></h6>
+                    <span>Technologies Used:</span>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+
+                <div class="project_item clickable hide" onclick="navigate()">
                     <p>Larch Web Browser</p>
+                    <h6 class="sm-margin-btm"><span>
+                        A cutom-built web browser written entirely in Java utilizing FX Swing for GUI elements,
+                        Fast API for HTTP-based services.
+                    </span></h6>
+                    <span>Technologies Used:</span>
                     <ul>
                         <li>Java</li>
                         <li>FX Swing</li>
@@ -271,8 +376,13 @@
                     </ul>
                 </div>
 
-                <div class="project_item">
-                    <p>Full stack web store for small business</p>
+                <div class="project_item clickable hide" onclick="navigate()">
+                    <p>Marlena Co.</p>
+                    <h6 class="sm-margin-btm"><span>
+                        Fullstack webpage for a small art goods business. Website contains news page, available inventory,
+                        options to buy (along with secure checkout), and capability to create and manage profile.
+                    </span></h6>
+                    <span>Technologies Used:</span>
                     <ul>
                         <li>Angular</li>
                         <li>MySQL</li>
@@ -282,22 +392,41 @@
                     </ul>
                 </div>
 
-                <div class="project_item">
+                <div class="project_item clickable hide" onclick="navigate()">
                     <p>Plant Trade</p>
+                    <h6 class="sm-margin-btm"><span>
+                        Fullstack web-based forum for users to be able to post/look for plant trades. Allows users to create profile,
+                        post, and interact with other users to set up trades
+                    </span></h6>
+                    <span>Technologies Used:</span>
                     <ul>
                         <li>PhP</li>
+                        <li>SQL</li>
+                        <li>REST</li>
+                        <li>Firebase</li>
                     </ul>
                 </div>
 
-                <div class="project_item">
+                <div class="project_item clickable hide" onclick="navigate()">
                     <p>DnD Companion</p>
+                    <h6 class="sm-margin-btm"><span>
+                        Desktop application to integrate into existing discord and serve as a companion app for Dungeons and Dragons 
+                        game masters. Capable of saving music & sound effects and play either through speakers or into a discord server.
+                    </span></h6>
+                    <span>Technologies Used:</span>
                     <ul>
                         <li>TBD</li>
                     </ul>
                 </div>
 
-                <div class="project_item">
+                <div class="project_item clickable hide" onclick="navigate()">
                     <p>Planting Services</p>
+                    <h6 class="sm-margin-btm"><span>
+                        Web application for new aspiring plant parents to hire service that will visit locale, inspect area, and recommend
+                        optimal plants based on climate, lighting, and preference. Application allows users to create account, schedule
+                        appointments, and pay for services.
+                    </span></h6>
+                    <span>Technologies Used:</span>
                     <ul>
                         <li>TBD</li>
                     </ul>
@@ -305,33 +434,44 @@
             </section>
 
             <!-- Section to facilitate contacting me. Includes section for message and sender -->
-            <div id="Contact" class="article">
-                    <h1>Contact Me</h1>
-                <form id="Contact-info">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="ex. John Wick"><br>   
-                    <label for="msg">Message</label><br>
-                    <input type="text" id="msg" name="msg" placeholder="Hi, how are ya?"><br>
-                    <input type="submit" id="submit" name="submit" value="Submit">
+            <section id="Contact">
+                <div class="contact_item">
+                    <span class="title-lg med-padding title_card">Contact Me</span>
+                    <span class="med-padding">Have any questions?? Any development ideas?? Just want to chat? Feel free to fill in the form to message me directly!! I try to respond to everything!</span>
+                </div>
 
-                </form>
-            </div>
+                <div class="contact_item">
+                    <form id="Contact-info">
+                        <label for="name">Name:</label><br>
+                        <input class="info_item" type="text" id="name" name="name" placeholder="ex. John Wick"><br>   
+                        <label for="msg">Message</label><br>
+                        <!--<input class="info_item" type="text" id="msg" name="msg" placeholder="Hi, how are ya?"><br>-->
+                        <textarea class="info_item box_lg" id="msg" name="msg" placeholder="Hi, how are ya?" rows="8"></textarea>
+                        <input class="info_item info_submit" type="submit" id="submit" name="submit" value="Submit">
+
+                    </form>
+                </div>
+            </section>
         </main>
 
         <!-- Footer content -->
         <footer>
-            <div class="footer-links container">
-                <h4>
-                    <a href="https://github.com/Dario-Torres">GitHub</a>
-                </h4>
-                <h4>&#x2022;</h4>
-                <h4>
-                    <a href="https://www.linkedin.com/in/josedario-m-torres/">LinkedIn</a>
-                </h4>
-                <h4>&#x2022;</h4>
-                <h4>
-                    <a href="https://www.instagram.com/daria_nbdoll/">Instagram</a>
-                </h4>
+            <div class="footer_content">
+                <span class="footer_link">
+                    <h4><a href="https://github.com/Dario-Torres" target="_blank">GitHub</a></h4>
+                </span>
+                <span class="footer_dot"><h4>&#x2022;</h4></span>
+                <span class="footer_link">
+                    <h4><a href="https://www.linkedin.com/in/josedario-m-torres/" target="_blank">LinkedIn</a></h4>
+                </span>
+                <span class="footer_dot"><h4>&#x2022;</h4></span>
+                <span class="footer_link">
+                    <h4><a href="https://www.instagram.com/daria_nbdoll/" target="_blank">Instagram</a></h4>
+                </span>
+                <span class="footer_dot"><h4>&#x2022;</h4></span>
+                <span class="footer_link">
+                    <h4><a href="./documents/dario_torres.pdf" target="_blank">Resume</a></h4>
+                </span>
             </div>
         </footer>
     </body>
